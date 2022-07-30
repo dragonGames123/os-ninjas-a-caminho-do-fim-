@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Corrida de Carros</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyDp8ejp0L6MkggnD0zKWiImm3MKUTbAaKI",
+          authDomain: "a-guerra-entre-ninjas.firebaseapp.com",
+          databaseURL: "https://a-guerra-entre-ninjas-default-rtdb.firebaseio.com",
+          projectId: "a-guerra-entre-ninjas",
+          storageBucket: "a-guerra-entre-ninjas.appspot.com",
+          messagingSenderId: "768740201861",
+          appId: "1:768740201861:web:63609cdc22d045371ce0ec"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
